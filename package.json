@@ -4,7 +4,9 @@
     "description": "Javascript Crypto Library",
     "keywords": [
         "aes",
+        "client",
         "crypto",
+        "decrypt",
         "encrypt",
         "javascript",
         "js",
