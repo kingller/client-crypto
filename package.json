@@ -34,7 +34,7 @@
     "scripts": {
         "build": "npm run clean && tsc --build tsconfig.json",
         "clean": "rimraf ./dist",
-        "prepublishOnly": "npm run build && git add ./dist && git commit -m 'build' && git push"
+        "prepublishOnly": "npm run build"
     },
     "dependencies": {
         "jsencrypt": "3.0.0-rc.1",
