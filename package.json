@@ -1,0 +1,48 @@
+{
+    "name": "web-crypto",
+    "version": "1.0.0",
+    "description": "Javascript Crypto Library",
+    "keywords": [
+        "aes",
+        "crypto",
+        "encrypt",
+        "javascript",
+        "js",
+        "rsa",
+        "web"
+    ],
+    "homepage": "https://github.com/kingller/web-crypto",
+    "bugs": {
+        "url": "https://github.com/kingller/web-crypto/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kingller/web-crypto.git"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Kingller Tang",
+        "url": "https://github.com/kingller"
+    },
+    "files": [
+        "dist/*",
+        "package.json",
+        "README.md"
+    ],
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "scripts": {
+        "build": "npm run clean && tsc --build tsconfig.json",
+        "clean": "rimraf ./dist",
+        "prepublishOnly": "npm run build && git add ./dist && git commit -m 'build' && git push"
+    },
+    "dependencies": {
+        "jsencrypt": "3.0.0-rc.1",
+        "sjcl": "1.0.8"
+    },
+    "devDependencies": {
+        "@types/sjcl": "1.0.29",
+        "rimraf": "^3.0.2",
+        "typescript": "^3.7.3"
+    }
+}
