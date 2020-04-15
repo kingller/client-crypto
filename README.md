@@ -1,10 +1,10 @@
-# web-crypto
+# client-crypto
 Javascript Crypto Library
 
 ## Install
 
 ```bash
-npm i -D web-crypto
+npm i -D client-crypto
 ``` 
 
 ## Usage
@@ -20,14 +20,14 @@ npm i -D web-crypto
 
 #### 加密
 ```javascript
-import Crypto from 'web-crypto';
+import Crypto from 'client-crypto';
 
 Crypto.RSA.encrypt('secretKey', 'publicKey');
 ```
 
 #### 解密
 ```javascript
-import Crypto from 'web-crypto';
+import Crypto from 'client-crypto';
 
 Crypto.RSA.encrypt('encryptedKey', 'privateKey');
 ```
@@ -38,7 +38,7 @@ Crypto.RSA.encrypt('encryptedKey', 'privateKey');
 ### createKey 生成密钥
 
 ```javascript
-import Crypto from 'web-crypto';
+import Crypto from 'client-crypto';
 
 Crypto.AES.createKey();
 ```
@@ -46,7 +46,7 @@ Crypto.AES.createKey();
 ### encrypt 加密
 
 ```javascript
-import Crypto from 'web-crypto';
+import Crypto from 'client-crypto';
 
 Crypto.AES.encrypt(data);
 ```
@@ -54,7 +54,7 @@ Crypto.AES.encrypt(data);
 ### decrypt 解密
 
 ```javascript
-import Crypto from 'web-crypto';
+import Crypto from 'client-crypto';
 
 Crypto.AES.decrypt('encrypted message');
 ```
@@ -62,7 +62,7 @@ Crypto.AES.decrypt('encrypted message');
 ### getKey 获取密钥
 
 ```javascript
-import Crypto from 'web-crypto';
+import Crypto from 'client-crypto';
 
 Crypto.AES.getKey();
 ```
@@ -70,7 +70,7 @@ Crypto.AES.getKey();
 ### clearKey 清除密钥
 
 ```javascript
-import Crypto from 'web-crypto';
+import Crypto from 'client-crypto';
 
 Crypto.AES.clearKey();
 ```

@@ -1,5 +1,5 @@
 {
-    "name": "web-crypto",
+    "name": "client-crypto",
     "version": "1.0.0",
     "description": "Javascript Crypto Library",
     "keywords": [
@@ -11,13 +11,13 @@
         "rsa",
         "web"
     ],
-    "homepage": "https://github.com/kingller/web-crypto",
+    "homepage": "https://github.com/kingller/client-crypto",
     "bugs": {
-        "url": "https://github.com/kingller/web-crypto/issues"
+        "url": "https://github.com/kingller/client-crypto/issues"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/kingller/web-crypto.git"
+        "url": "https://github.com/kingller/client-crypto.git"
     },
     "license": "MIT",
     "author": {
