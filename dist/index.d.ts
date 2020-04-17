@@ -1,5 +1,5 @@
 declare const _default: {
-    AES: import("./aes").AES;
+    AES: import("pandora-aes").AES;
     RSA: {
         encrypt: (plaintext: string, publicKey: string) => string;
         decrypt: (message: string, privateKey: string) => string;

@@ -35,7 +35,7 @@ Crypto.RSA.encrypt('encryptedKey', 'privateKey');
 ### AES
 默认使用`gcm`模式。
 
-### createKey 生成密钥
+#### createKey 生成密钥
 
 ```javascript
 import Crypto from 'client-crypto';
@@ -43,7 +43,7 @@ import Crypto from 'client-crypto';
 Crypto.AES.createKey();
 ```
 
-### encrypt 加密
+#### encrypt 加密
 
 ```javascript
 import Crypto from 'client-crypto';
@@ -51,7 +51,7 @@ import Crypto from 'client-crypto';
 Crypto.AES.encrypt(data);
 ```
 
-### decrypt 解密
+#### decrypt 解密
 
 ```javascript
 import Crypto from 'client-crypto';
@@ -59,7 +59,7 @@ import Crypto from 'client-crypto';
 Crypto.AES.decrypt('encrypted message');
 ```
 
-### getKey 获取密钥
+#### getKey 获取密钥
 
 ```javascript
 import Crypto from 'client-crypto';
@@ -67,7 +67,15 @@ import Crypto from 'client-crypto';
 Crypto.AES.getKey();
 ```
 
-### clearKey 清除密钥
+#### setKey 设置密钥
+
+```javascript
+import Crypto from 'client-crypto';
+
+Crypto.AES.setKey('密钥');
+```
+
+#### clearKey 清除密钥
 
 ```javascript
 import Crypto from 'client-crypto';

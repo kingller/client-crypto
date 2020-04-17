@@ -40,10 +40,9 @@
     },
     "dependencies": {
         "jsencrypt": "3.0.0-rc.1",
-        "sjcl": "1.0.8"
+        "pandora-aes": "1.0.0"
     },
     "devDependencies": {
-        "@types/sjcl": "1.0.29",
         "rimraf": "^3.0.2",
         "typescript": "^3.7.3"
     }
