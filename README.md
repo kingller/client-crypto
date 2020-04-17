@@ -43,21 +43,27 @@ import Crypto from 'client-crypto';
 Crypto.AES.createKey();
 ```
 
+使用该方法生成密钥后，会缓存该密钥，使用加密（encrypt）或解密（decrypt）方法时也可不提供密钥。
+
 #### encrypt 加密
 
 ```javascript
 import Crypto from 'client-crypto';
 
-Crypto.AES.encrypt(data);
+Crypto.AES.encrypt(data, '密钥');
 ```
+
+该方法会先执行JSON.stringify(data)，将数据转为json格式的字符串，然后使用AES加密。
 
 #### decrypt 解密
 
 ```javascript
 import Crypto from 'client-crypto';
 
-Crypto.AES.decrypt('encrypted message');
+Crypto.AES.decrypt('encrypted message', '密钥');
 ```
+
+该方法会使用AES解密，再执行JSON.parse，获取数据。
 
 #### getKey 获取密钥
 
@@ -83,5 +89,5 @@ import Crypto from 'client-crypto';
 Crypto.AES.clearKey();
 ```
 
-## 服务端
-Java：[AES代码示例](https://blog.csdn.net/catoop/article/details/96431206?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522158650148019725256734765%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=158650148019725256734765&biz_id=0&utm_source=distribute.pc_search_result.none-task-blog-soetl_so_first_rank_v2_rank_v25-12)
+## 使用说明
+[前端加解密](https://www.jianshu.com/p/8f4830594de3)
