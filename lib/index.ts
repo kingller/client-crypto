@@ -1,7 +1,8 @@
-import AES from 'pandora-aes';
+import Crypto from 'pandora-crypto';
 import RSA from './rsa';
 
 export default {
-    AES,
     RSA,
+    AES: Crypto.AES,
+    SHA256: Crypto.SHA256,
 };

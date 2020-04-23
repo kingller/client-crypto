@@ -1,10 +1,10 @@
 # client-crypto
-Javascript Crypto Library
+Javascript Crypto Library for web
 
 ## Install
 
 ```bash
-npm i -D client-crypto
+npm install client-crypto
 ``` 
 
 ## Usage
@@ -31,6 +31,7 @@ import Crypto from 'client-crypto';
 
 Crypto.RSA.encrypt('encryptedKey', 'privateKey');
 ```
+
 
 ### AES
 默认使用`gcm`模式。
@@ -88,6 +89,16 @@ import Crypto from 'client-crypto';
 
 Crypto.AES.clearKey();
 ```
+
+
+### SHA256
+
+```javascript
+import Crypto from 'pandora-crypto';
+
+Crypto.SHA256('message');
+```
+
 
 ## 使用说明
 [前端加解密](https://www.jianshu.com/p/8f4830594de3)
