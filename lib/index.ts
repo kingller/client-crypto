@@ -1,4 +1,4 @@
-import Crypto from 'pandora-crypto';
+import Crypto from 'pandora-crypto-browserify';
 import RSA from './rsa';
 
 export default {
