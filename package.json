@@ -1,6 +1,6 @@
 {
     "name": "client-crypto",
-    "version": "1.2.1",
+    "version": "1.2.2",
     "description": "Javascript Crypto Library for browser",
     "keywords": [
         "aes",
@@ -42,7 +42,7 @@
     },
     "dependencies": {
         "jsencrypt": "3.0.0-rc.1",
-        "pandora-crypto-browserify": "^1.0.0"
+        "pandora-crypto-browserify": "1.0.0"
     },
     "devDependencies": {
         "rimraf": "^3.0.2",
