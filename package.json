@@ -1,6 +1,6 @@
 {
     "name": "client-crypto",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "description": "Javascript Crypto Library for browser",
     "keywords": [
         "aes",

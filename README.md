@@ -1,5 +1,5 @@
 # client-crypto
-Javascript Crypto Library for web
+Javascript Crypto Library for browser
 
 ## Install
 
@@ -94,7 +94,7 @@ Crypto.AES.clearKey();
 ### SHA256
 
 ```javascript
-import Crypto from 'pandora-crypto';
+import Crypto from 'client-crypto';
 
 Crypto.SHA256('message');
 ```

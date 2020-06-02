@@ -6,6 +6,10 @@
 <font color=red><strong>删除</strong></font>
 
 
+# 1.2.3
+1. <font color=red>修复</font> `README.md`文档说明不正确
+
+
 # 1.2.2
 1. <font color=red>修复</font> 使用`pandora-crypto-browserify`精确版本号，防止引用包自动升级出现问题
 
