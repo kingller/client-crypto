@@ -4,7 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 // @ts-ignore
-var jsencrypt_1 = __importDefault(require("jsencrypt"));
+var pandora_jsencrypt_1 = __importDefault(require("pandora-jsencrypt"));
 exports.default = {
     /**
      * 加密
@@ -15,7 +15,7 @@ exports.default = {
         // 公钥
         var PUBLIC_KEY = publicKey;
         //使用公钥加密
-        var encrypt = new jsencrypt_1.default();
+        var encrypt = new pandora_jsencrypt_1.default();
         encrypt.setPublicKey('-----BEGIN PUBLIC KEY-----' + PUBLIC_KEY + '-----END PUBLIC KEY-----');
         var encryptedStr = encrypt.encrypt(plaintext);
         return encryptedStr;
@@ -29,7 +29,7 @@ exports.default = {
         //私钥
         var PRIVATE_KEY = privateKey;
         //使用私钥解密
-        var decrypt = new jsencrypt_1.default();
+        var decrypt = new pandora_jsencrypt_1.default();
         decrypt.setPrivateKey('-----BEGIN RSA PRIVATE KEY-----' + PRIVATE_KEY + '-----END RSA PRIVATE KEY-----');
         var decryptedMsg = decrypt.decrypt(message);
         return decryptedMsg;

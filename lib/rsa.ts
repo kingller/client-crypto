@@ -1,5 +1,5 @@
 // @ts-ignore
-import JSEncrypt from 'jsencrypt';
+import JSEncrypt from 'pandora-jsencrypt';
 
 export default {
     /**

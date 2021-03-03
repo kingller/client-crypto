@@ -6,6 +6,11 @@
 <font color=red><strong>删除</strong></font>
 
 
+
+# 1.2.5
+1. <font color=red><strong>删除</strong></font> `YUI`版本说明
+
+
 # 1.2.4
 1. <font color=red>修复</font> 编译时警告`Module not found: Error: Can't resolve 'null'`
 
