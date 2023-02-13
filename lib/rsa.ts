@@ -7,7 +7,7 @@ export default {
      * @param plaintext 明文
      * @param publicKey 公钥
      */
-    encrypt: function(plaintext: string, publicKey: string): string {
+    encrypt: function(plaintext: string, publicKey: string): string | false {
         // 公钥
         const PUBLIC_KEY = publicKey;
 
@@ -22,7 +22,7 @@ export default {
      * @param message 密文
      * @param privateKey 私钥
      */
-    decrypt: function(message: string, privateKey: string): string {
+    decrypt: function(message: string, privateKey: string): string | false {
         //私钥
         const PRIVATE_KEY = privateKey;
         //使用私钥解密

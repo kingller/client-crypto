@@ -4,12 +4,12 @@ declare const _default: {
      * @param plaintext 明文
      * @param publicKey 公钥
      */
-    encrypt: (plaintext: string, publicKey: string) => string;
+    encrypt: (plaintext: string, publicKey: string) => string | false;
     /**
      * 解密
      * @param message 密文
      * @param privateKey 私钥
      */
-    decrypt: (message: string, privateKey: string) => string;
+    decrypt: (message: string, privateKey: string) => string | false;
 };
 export default _default;
