@@ -7,6 +7,10 @@
 
 
 
+# 1.3.0
+1. <font color=red><strong>删除</strong></font> `RSA` 签名方式 `md2`, `md5`, `sha1`
+
+
 # 1.2.5
 1. <font color=red><strong>删除</strong></font> `YUI`版本说明
 
