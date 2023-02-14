@@ -7,6 +7,10 @@
 
 
 
+# 1.3.1
+1. <font color=red>修复</font> `pandora-jsencrypt` Can't resolve './JSEncrypt'`
+
+
 # 1.3.0
 1. <font color=red><strong>删除</strong></font> `RSA` 签名方式 `md2`, `md5`, `sha1`
 
