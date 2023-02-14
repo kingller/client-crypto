@@ -8,7 +8,7 @@
 
 
 # 1.3.1
-1. <font color=red>修复</font> `pandora-jsencrypt` Can't resolve './JSEncrypt'`
+1. <font color=red>修复</font> `pandora-jsencrypt` Can't resolve './JSEncrypt'
 
 
 # 1.3.0
