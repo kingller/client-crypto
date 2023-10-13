@@ -1,6 +1,6 @@
 {
     "name": "client-crypto",
-    "version": "1.3.1",
+    "version": "1.4.0",
     "description": "Javascript Crypto Library for browser",
     "keywords": [
         "aes",
@@ -41,7 +41,7 @@
         "prepublishOnly": "npm run build"
     },
     "dependencies": {
-        "pandora-crypto-browserify": "1.0.1",
+        "pandora-crypto-browserify": "1.1.0",
         "pandora-jsencrypt": "3.3.2"
     },
     "devDependencies": {
