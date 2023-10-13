@@ -8,7 +8,7 @@
 
 
 # 1.4.0
-1. <font color=blue>增强</font> `SHA256` 支持传入参数 `ArrayBuffer`
+1. <font color=blue>增强</font> `SHA256` 支持传入参数类型 `ArrayBuffer`
 
 
 # 1.3.1
