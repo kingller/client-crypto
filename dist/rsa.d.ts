@@ -11,5 +11,12 @@ declare const _default: {
      * @param privateKey 私钥
      */
     decrypt: (message: string, privateKey: string) => string | false;
+    /**
+     * 加密
+     * padding: OAEP and oaepHash: sha256
+     * @param plaintext 明文
+     * @param publicKey 公钥
+     */
+    encryptOAEP: (plaintext: string, publicKey: string) => string | false;
 };
 export default _default;

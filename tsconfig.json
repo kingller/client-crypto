@@ -9,7 +9,7 @@
         "allowSyntheticDefaultImports": true,
         "esModuleInterop": true,
         "declaration": true,
-        "lib": ["ES5", "DOM"]
+        "lib": ["es2015", "DOM"]
     },
     "include": ["lib/**/*"],
     "forceConsistentCasingInFileNames": true,

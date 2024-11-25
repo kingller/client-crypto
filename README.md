@@ -29,7 +29,36 @@ Crypto.RSA.encrypt('secretKey', 'publicKey');
 ```javascript
 import Crypto from 'client-crypto';
 
-Crypto.RSA.encrypt('encryptedKey', 'privateKey');
+Crypto.RSA.decrypt('encryptedKey', 'privateKey');
+```
+
+#### OAEP 加密
+
+使用 OAEP 填充模式结合 SHA-256 哈希算法
+
+```typescript
+import Crypto from 'client-crypto';
+
+Crypto.RSA.encryptOAEP('secretKey', 'publicKey');
+```
+
+#### OAEP 解密
+
+下面是用 nodejs 进行解密的示例
+
+```typescript
+import crypto from 'crypto';
+
+/** RSA 解密 */
+export function privateDecrypt(privateKey: crypto.KeyLike, encryptedText: string) {
+    const encryptedBuffer = Buffer.from(encryptedText, 'base64');
+    const msgBuffer = msgBuffer = crypto.privateDecrypt(
+        { key: privateKey, padding: crypto.constants.RSA_PKCS1_OAEP_PADDING, oaepHash: 'sha256' },
+        encryptedBuffer
+    );
+
+    return String.fromCharCode.apply(null, msgBuffer);
+}
 ```
 
 

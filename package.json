@@ -1,6 +1,6 @@
 {
     "name": "client-crypto",
-    "version": "1.4.0",
+    "version": "1.5.0",
     "description": "Javascript Crypto Library for browser",
     "keywords": [
         "aes",
@@ -42,10 +42,13 @@
     },
     "dependencies": {
         "pandora-crypto-browserify": "1.1.0",
-        "pandora-jsencrypt": "3.3.2"
+        "pandora-jsencrypt": "3.4.1"
     },
     "devDependencies": {
-        "rimraf": "^3.0.2",
-        "typescript": "^3.9.3"
+        "rimraf": "^5.0.10",
+        "typescript": "^4.2.4"
+    },
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org"
     }
 }

@@ -3,7 +3,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-// @ts-ignore
 var pandora_jsencrypt_1 = __importDefault(require("pandora-jsencrypt"));
 exports.default = {
     /**
@@ -33,5 +32,20 @@ exports.default = {
         decrypt.setPrivateKey('-----BEGIN RSA PRIVATE KEY-----' + PRIVATE_KEY + '-----END RSA PRIVATE KEY-----');
         var decryptedMsg = decrypt.decrypt(message);
         return decryptedMsg;
+    },
+    /**
+     * 加密
+     * padding: OAEP and oaepHash: sha256
+     * @param plaintext 明文
+     * @param publicKey 公钥
+     */
+    encryptOAEP: function (plaintext, publicKey) {
+        // 公钥
+        var PUBLIC_KEY = publicKey;
+        //使用公钥加密
+        var encrypt = new pandora_jsencrypt_1.default();
+        encrypt.setPublicKey(PUBLIC_KEY);
+        var encryptedStr = encrypt.encryptOAEP(plaintext);
+        return encryptedStr;
     },
 };

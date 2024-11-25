@@ -1,4 +1,3 @@
-// @ts-ignore
 import JSEncrypt from 'pandora-jsencrypt';
 
 export default {
@@ -30,5 +29,21 @@ export default {
         decrypt.setPrivateKey('-----BEGIN RSA PRIVATE KEY-----' + PRIVATE_KEY + '-----END RSA PRIVATE KEY-----');
         const decryptedMsg = decrypt.decrypt(message);
         return decryptedMsg;
+    },
+    /**
+     * 加密
+     * padding: OAEP and oaepHash: sha256
+     * @param plaintext 明文
+     * @param publicKey 公钥
+     */
+    encryptOAEP: function(plaintext: string, publicKey: string): string | false {
+        // 公钥
+        const PUBLIC_KEY = publicKey;
+
+        //使用公钥加密
+        const encrypt = new JSEncrypt();
+        encrypt.setPublicKey(PUBLIC_KEY);
+        const encryptedStr = encrypt.encryptOAEP(plaintext);
+        return encryptedStr;
     },
 };

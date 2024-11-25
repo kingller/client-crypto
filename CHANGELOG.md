@@ -6,6 +6,9 @@
 <font color=red><strong>删除</strong></font>
 
 
+# 1.5.0
+1. <font color=green>新增</font> `RSA.encryptOAEP` 支持使用 `OAEP` 填充模式结合 `SHA-256` 哈希算法的 `RSA` 加密
+
 
 # 1.4.0
 1. <font color=blue>增强</font> `SHA256` 支持传入参数类型 `ArrayBuffer`
