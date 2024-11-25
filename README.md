@@ -52,7 +52,7 @@ import crypto from 'crypto';
 /** RSA 解密 */
 export function privateDecrypt(privateKey: crypto.KeyLike, encryptedText: string) {
     const encryptedBuffer = Buffer.from(encryptedText, 'base64');
-    const msgBuffer = msgBuffer = crypto.privateDecrypt(
+    const msgBuffer = crypto.privateDecrypt(
         { key: privateKey, padding: crypto.constants.RSA_PKCS1_OAEP_PADDING, oaepHash: 'sha256' },
         encryptedBuffer
     );
