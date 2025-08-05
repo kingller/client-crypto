@@ -6,6 +6,9 @@
 <font color=red><strong>删除</strong></font>
 
 
+# 1.5.1
+1. Fixed `sha256` cannot be used in Worker
+
 # 1.5.0
 1. <font color=green>新增</font> `RSA.encryptOAEP` 支持使用 `OAEP` 填充模式结合 `SHA-256` 哈希算法的 `RSA` 加密
 
