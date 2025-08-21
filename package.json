@@ -1,6 +1,6 @@
 {
     "name": "client-crypto",
-    "version": "1.5.1",
+    "version": "1.5.2",
     "description": "Javascript Crypto Library for browser",
     "keywords": [
         "aes",
@@ -41,12 +41,12 @@
         "prepublishOnly": "npm run build"
     },
     "dependencies": {
-        "pandora-crypto-browserify": "1.1.1",
+        "pandora-crypto-browserify": "1.1.2",
         "pandora-jsencrypt": "3.4.1"
     },
     "devDependencies": {
         "rimraf": "^5.0.10",
-        "typescript": "^4.2.4"
+        "typescript": "^5.4.3"
     },
     "publishConfig": {
         "registry": "https://registry.npmjs.org"

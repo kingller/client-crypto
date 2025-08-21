@@ -6,6 +6,10 @@
 <font color=red><strong>删除</strong></font>
 
 
+# 1.5.2
+1. Fixed `aes` cannot be used in Worker
+
+
 # 1.5.1
 1. Fixed `sha256` cannot be used in Worker
 
